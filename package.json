@@ -1,0 +1,29 @@
+{
+  "name": "forkify_app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlonaAkimova/Forkify_app.git"
+  },
+  "author": "Alona Akimova-Bojarowicz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlonaAkimova/Forkify_app/issues"
+  },
+  "homepage": "https://github.com/AlonaAkimova/Forkify_app#readme",
+  "dependencies": {
+    "core-js": "^3.31.0",
+    "parcel": "^2.9.2",
+    "regenerator-runtime": "^0.13.11"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.9.2",
+    "process": "^0.11.10"
+  }
+}
