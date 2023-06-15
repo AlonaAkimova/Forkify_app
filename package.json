@@ -2,10 +2,10 @@
   "name": "forkify_app",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "default": "index.html",
   "scripts": {
     "start": "parcel index.html",
-    "build": "parcel build index.html"
+    "build": "parcel build index.html --dist-dir ./dist"
   },
   "repository": {
     "type": "git",
@@ -19,6 +19,7 @@
   "homepage": "https://github.com/AlonaAkimova/Forkify_app#readme",
   "dependencies": {
     "core-js": "^3.31.0",
+    "fractional": "^1.0.0",
     "parcel": "^2.9.2",
     "regenerator-runtime": "^0.13.11"
   },
