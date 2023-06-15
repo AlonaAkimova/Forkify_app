@@ -1,12 +1,14 @@
 import View from './View.js';
-import icons from '../../img/icons.svg';
+import icons from 'url:../../img/icons.svg'; // Parcel 2
+
 class AddRecipeView extends View {
   _parentElement = document.querySelector('.upload');
+  _message = 'Recipe was successfully uploaded :)';
+
   _window = document.querySelector('.add-recipe-window');
   _overlay = document.querySelector('.overlay');
   _btnOpen = document.querySelector('.nav__btn--add-recipe');
   _btnClose = document.querySelector('.btn--close-modal');
-  _message = 'Recipe was succesfully uploaded 👍';
 
   constructor() {
     super();
@@ -33,10 +35,10 @@ class AddRecipeView extends View {
       e.preventDefault();
       const dataArr = [...new FormData(this)];
       const data = Object.fromEntries(dataArr);
-
       handler(data);
     });
   }
+
   _generateMarkup() {}
 }
 
